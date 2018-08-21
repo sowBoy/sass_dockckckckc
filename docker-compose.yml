@@ -1,0 +1,50 @@
+version: '3.1'                                
+
+services:
+  app:
+    container_name: grouperf_apps
+    build: php-tools
+    ports: 
+      - 9000:9000
+    links:
+      - db
+    volumes:
+      - ./symfony:/var/www
+      - "./conf/whatever.ini:/usr/local/etc/php/conf.d/whatever.ini"
+      - "/etc/timezone:/etc/timezone:ro"
+      - "/etc/localtime:/etc/localtime:ro"
+  
+  apache:
+    container_name: grouperf_apache
+    build: apache-tools
+    volumes:
+      - ./symfony:/var/www/html
+      - ./apache-tools/vhosts/grfdockerizedsf.conf:/etc/apache2/sites-available/grfdockerizedsf.conf:ro
+      - ./apache-tools/vhosts/grfdockerizedsf.conf:/etc/apache2/sites-enabled/grfdockerizedsf.conf:ro
+      - ./apache-tools/logs:/var/log/apache2
+    links:
+      - db
+    ports:
+      - "80:80"
+    privileged: true
+
+  db:
+    container_name: grouperf_db
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: passroot
+
+  adminer:
+    container_name: grouperf_admina
+    image: adminer
+    restart: always
+    ports:
+      - 8081:8081
+    links:
+      - db
+    environment:
+      MYSQL_USERNAME: root
+      MYSQL_ROOT_PASSWORD: passroot   
+      PMA_HOST: db 

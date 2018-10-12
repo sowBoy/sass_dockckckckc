@@ -2,7 +2,7 @@ version: '3.1'
 
 services:
   app:
-    container_name: grouperf_apps
+    container_name: sowboy_apps
     build: php-tools
     ports: 
       - 9000:9000
@@ -15,12 +15,12 @@ services:
       - "/etc/localtime:/etc/localtime:ro"
   
   apache:
-    container_name: grouperf_apache
+    container_name: sowboy_apache
     build: apache-tools
     volumes:
       - ./symfony:/var/www/html
-      - ./apache-tools/vhosts/grfdockerizedsf.conf:/etc/apache2/sites-available/grfdockerizedsf.conf:ro
-      - ./apache-tools/vhosts/grfdockerizedsf.conf:/etc/apache2/sites-enabled/grfdockerizedsf.conf:ro
+      - ./apache-tools/vhosts/example.conf:/etc/apache2/sites-available/example.conf:ro
+      - ./apache-tools/vhosts/example.conf:/etc/apache2/sites-enabled/example.conf:ro
       - ./apache-tools/logs:/var/log/apache2
     links:
       - db
@@ -29,7 +29,7 @@ services:
     privileged: true
 
   db:
-    container_name: grouperf_db
+    container_name: sowboy_db
     image: mysql
     command: --default-authentication-plugin=mysql_native_password
     restart: always
@@ -37,7 +37,7 @@ services:
       MYSQL_ROOT_PASSWORD: passroot
 
   adminer:
-    container_name: grouperf_admina
+    container_name: sowboy_admina
     image: adminer
     restart: always
     ports:

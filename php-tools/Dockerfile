@@ -1,5 +1,5 @@
 #php-tools/Dockerfile
-FROM php:7.1-apache
+FROM php:7.3-apache
 RUN docker-php-source extract \
     && docker-php-source delete
 RUN apt-get update && apt-get install -y \
@@ -17,7 +17,8 @@ RUN apt-get update && apt-get install -y \
 RUN apt-get update && \
     apt-get install -y \
         zlib1g-dev\
-        curl
+        curl\
+        libzip-dev
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 RUN composer --version
@@ -36,6 +37,9 @@ RUN ln -snf /usr/share/zoneinfo/Europe/Paris /etc/localtime \
 	&& echo Europe/Paris > /etc/timezone \
         && dpkg-reconfigure -f noninteractive tzdata
 RUN "date"
+
+# Memory Limit
+RUN echo "memory_limit=-1" > $PHP_INI_DIR/conf.d/memory-limit.ini
 
 #node js
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -

@@ -1,5 +1,5 @@
 #php-tools/Dockerfile
-FROM php:7.3-apache
+FROM php:7.2-apache
 RUN docker-php-source extract \
     && docker-php-source delete
 RUN apt-get update && apt-get install -y \
@@ -53,7 +53,7 @@ RUN apt-get update && apt-get install -y yarn
 
 RUN docker-php-ext-configure intl
 # Type docker-php-ext-install to see available extensions
-RUN docker-php-ext-install pdo pdo_mysql zip curl gd intl exif
+RUN docker-php-ext-install pdo pdo_mysql zip curl gd intl exif soap bcmath 
 RUN ["apt-get", "update"]
 RUN ["apt-get", "install", "-y", "vim"]
 VOLUME ["/var/www"]

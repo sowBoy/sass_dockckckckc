@@ -19,8 +19,8 @@ services:
     build: apache-tools
     volumes:
       - ./symfony:/var/www/html
-      - ./apache-tools/vhosts/example.conf:/etc/apache2/sites-available/example.conf:ro
-      - ./apache-tools/vhosts/example.conf:/etc/apache2/sites-enabled/example.conf:ro
+      - ./apache-tools/vhosts/chamilo-lms.conf:/etc/apache2/sites-available/chamilo-lms.conf:ro
+      - ./apache-tools/vhosts/chamilo-lms.conf:/etc/apache2/sites-enabled/chamilo-lms.conf:ro
       - ./apache-tools/logs:/var/log/apache2
     links:
       - db
@@ -30,8 +30,7 @@ services:
 
   db:
     container_name: sowboy_db
-    image: mysql
-    command: --default-authentication-plugin=mysql_native_password
+    image: mariadb:10.2
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: passroot

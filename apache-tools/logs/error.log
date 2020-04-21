@@ -1,0 +1,58 @@
+AH00112: Warning: DocumentRoot [/var/www/html/example/public] does not exist
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.20.0.5. Set the 'ServerName' directive globally to suppress this message
+[Wed May 08 13:04:45.031381 2019] [mpm_prefork:notice] [pid 9] AH00163: Apache/2.4.29 (Ubuntu) configured -- resuming normal operations
+[Wed May 08 13:04:45.031442 2019] [core:notice] [pid 9] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00112: Warning: DocumentRoot [/var/www/html/example/public] does not exist
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.4. Set the 'ServerName' directive globally to suppress this message
+[Sat Nov 30 07:49:04.256711 2019] [mpm_prefork:notice] [pid 10] AH00163: Apache/2.4.29 (Ubuntu) configured -- resuming normal operations
+[Sat Nov 30 07:49:04.256771 2019] [core:notice] [pid 10] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00112: Warning: DocumentRoot [/var/www/html/example/public] does not exist
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.3. Set the 'ServerName' directive globally to suppress this message
+[Thu Dec 12 19:26:10.166014 2019] [mpm_prefork:notice] [pid 10] AH00163: Apache/2.4.29 (Ubuntu) configured -- resuming normal operations
+[Thu Dec 12 19:26:10.166075 2019] [core:notice] [pid 10] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00112: Warning: DocumentRoot [/var/www/html/example/public] does not exist
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.5. Set the 'ServerName' directive globally to suppress this message
+[Sat Jan 25 11:11:06.934639 2020] [core:warn] [pid 10] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sat Jan 25 11:11:06.940352 2020] [mpm_prefork:notice] [pid 10] AH00163: Apache/2.4.29 (Ubuntu) configured -- resuming normal operations
+[Sat Jan 25 11:11:06.940392 2020] [core:notice] [pid 10] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00112: Warning: DocumentRoot [/var/www/html/example/public] does not exist
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.3. Set the 'ServerName' directive globally to suppress this message
+[Sat Feb 01 06:43:04.092532 2020] [core:warn] [pid 11] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sat Feb 01 06:43:04.096371 2020] [mpm_prefork:notice] [pid 11] AH00163: Apache/2.4.29 (Ubuntu) configured -- resuming normal operations
+[Sat Feb 01 06:43:04.104742 2020] [core:notice] [pid 11] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00112: Warning: DocumentRoot [/var/www/html/example/public] does not exist
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.3. Set the 'ServerName' directive globally to suppress this message
+[Sat Feb 01 09:42:26.601692 2020] [core:warn] [pid 10] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sat Feb 01 09:42:26.610023 2020] [mpm_prefork:notice] [pid 10] AH00163: Apache/2.4.29 (Ubuntu) configured -- resuming normal operations
+[Sat Feb 01 09:42:26.610093 2020] [core:notice] [pid 10] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00112: Warning: DocumentRoot [/var/www/html/example/public] does not exist
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.5. Set the 'ServerName' directive globally to suppress this message
+[Sat Feb 08 07:01:28.501056 2020] [core:warn] [pid 11] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sat Feb 08 07:01:28.552188 2020] [mpm_prefork:notice] [pid 11] AH00163: Apache/2.4.29 (Ubuntu) configured -- resuming normal operations
+[Sat Feb 08 07:01:28.552220 2020] [core:notice] [pid 11] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00112: Warning: DocumentRoot [/var/www/html/example/public] does not exist
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.3. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 18 17:00:52.075257 2020] [core:warn] [pid 10] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sat Apr 18 17:00:52.107736 2020] [mpm_prefork:notice] [pid 10] AH00163: Apache/2.4.29 (Ubuntu) configured -- resuming normal operations
+[Sat Apr 18 17:00:52.107817 2020] [core:notice] [pid 10] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00112: Warning: DocumentRoot [/var/www/html/example/public] does not exist
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.3. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 18 17:15:49.654854 2020] [mpm_prefork:notice] [pid 11] AH00163: Apache/2.4.29 (Ubuntu) configured -- resuming normal operations
+[Sat Apr 18 17:15:49.654904 2020] [core:notice] [pid 11] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00112: Warning: DocumentRoot [/var/www/html/example/public] does not exist
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.4. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 18 17:21:47.220060 2020] [mpm_prefork:notice] [pid 11] AH00163: Apache/2.4.29 (Ubuntu) configured -- resuming normal operations
+[Sat Apr 18 17:21:47.220112 2020] [core:notice] [pid 11] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00112: Warning: DocumentRoot [/var/www/html/example/public] does not exist
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.20.0.4. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 18 17:58:49.987262 2020] [mpm_prefork:notice] [pid 10] AH00163: Apache/2.4.29 (Ubuntu) configured -- resuming normal operations
+[Sat Apr 18 17:58:49.987351 2020] [core:notice] [pid 10] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.21.0.3. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 18 18:04:23.046978 2020] [mpm_prefork:notice] [pid 10] AH00163: Apache/2.4.29 (Ubuntu) configured -- resuming normal operations
+[Sat Apr 18 18:04:23.047021 2020] [core:notice] [pid 10] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.22.0.4. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 18 18:11:59.502095 2020] [mpm_prefork:notice] [pid 10] AH00163: Apache/2.4.29 (Ubuntu) configured -- resuming normal operations
+[Sat Apr 18 18:11:59.502156 2020] [core:notice] [pid 10] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.23.0.4. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 18 19:40:25.603261 2020] [mpm_prefork:notice] [pid 10] AH00163: Apache/2.4.29 (Ubuntu) configured -- resuming normal operations
+[Sat Apr 18 19:40:25.603327 2020] [core:notice] [pid 10] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
